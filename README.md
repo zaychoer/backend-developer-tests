@@ -8,7 +8,7 @@ This project uses Ruby 3.3.0 and you run it with `ruby main.rb`.
 
 ## Objective
 
-Given a _weighted bi-directional_ grid (more on that below) your task is to implement a strategy that visits all nodes in minimal time and incurring minimal travel cost. To do that you need to implement one or more _Players_. The entry point is located at `main.rb#your_strategy`.
+Given a _weighted bi-directional_ grid (more on that below) your task is to implement a strategy that visits all nodes in minimal time and incurring minimal travel cost. To do that you need to implement one or more _Players_. The entry point is located at `main.rb#your_strategy`. The travel cost is calculated as a sum of weights of edges travelled.
 
 Player is a class that extends `BasePlayer` and has one public method `next_point` which should return a hash corresponding to the next point to visit. See `random_player.rb` as an example which implements random walk pattern.
 
